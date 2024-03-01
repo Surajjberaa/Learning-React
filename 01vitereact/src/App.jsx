@@ -1,10 +1,15 @@
 import { useState } from 'react'
+import Chai from './chai'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <h1>Chai aur React | Suraj Bera</h1>
+    <>
+    <Chai/>
+    <h1>Chai aur react</h1>
+    <p>test paragraph</p>
+    </>
   )
 }
 
