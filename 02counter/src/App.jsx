@@ -14,6 +14,22 @@ function App() {
     // console.log("clicked", counter);
     if (counter<20) {
       setCounter(counter + 1)
+
+      // interview question
+      // setCounter(counter + 1)
+      // setCounter(counter + 1) 
+      // setCounter(counter + 1) 
+      // What will happen now  Ans. The output will still increment only by 1 because fiber in react which send it in a package form so it is only repeating 
+      // Now, if you want this situation where you want to increment it by more amount  
+      // Ans. setCounter gives you a callback function which holds the previousvalue or you can say the updated value after 1 sum the syntax will be:-
+      // setCounter((prevCounter) => prevCounter + 1)
+      // setCounter((prevCounter) => prevCounter + 1)
+      // setCounter((prevCounter) => prevCounter + 1)
+
+      // These are interview questions that are generally asked (said by Hitesh sir)
+      // I'll comment this lines so it does't break the flow of the original program and i can reference from it whenever i want
+
+
     }else{
       alert("Counter value can't exceed 20")
     }
