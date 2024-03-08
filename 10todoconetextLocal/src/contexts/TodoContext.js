@@ -7,10 +7,15 @@ export const TodoContext = createContext({
             todo: "todo msg",
             completed: false,
         }
-    ]
+    ],
+    addTodo : (todo) => {},
+    updatedTodo: (id, todo) => {},
+    deleteTodo: (id) => {},
+    toggleComplete: (id) => {}
+
 })
 
-export default useTodo = () => {
+export const useTodo = () => {
     return useContext(TodoContext);
 }
 
